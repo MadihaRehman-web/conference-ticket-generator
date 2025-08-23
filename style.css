@@ -1,12 +1,103 @@
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  min-height: 100vh;
+  background: url("./assets/images/pattern-lines.svg") center / cover,
+    url("./assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg") left
+      bottom / 19rem no-repeat,
+    url("./assets/images/pattern-squiggly-line-top.svg") right top / 8rem 6rem
+      no-repeat,
+    url("./assets/images/background-mobile.png") 100% 100% / cover;
+  color: white;
 }
 
 .form-page {
-  height: 100vh;
-  background-image: url("./assets/images/background-mobile.png");
-  background-position: 100% 100%;
-  background-size: cover;
-} */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coding-conf-logo {
+  max-width: 9rem;
+  margin-top: 2.5rem;
+}
+
+.heading {
+  margin-top: 1.8rem;
+  text-align: center;
+  padding-inline: 2rem;
+}
+
+.sub-heading {
+  text-align: center;
+  padding-inline: 2rem;
+  margin-top: 1rem;
+  color: #ccc;
+}
+
+.form-container > div {
+  margin-top: 1.4rem;
+}
+
+.form-container input {
+  margin-top: 0.7rem;
+}
+
+.avatar-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 22rem;
+  height: 7rem;
+  border: 2px dashed #7c7c7c;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-block: 0.6rem;
+}
+
+.avatar-input {
+  display: none;
+}
+
+.icon-upload {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.upload-info {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.text-field {
+  display: block;
+  width: 22rem;
+  height: 3.2rem;
+  border: 2px solid #9f9e9e;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  padding-inline: 0.8rem;
+  outline: none;
+}
+
+.generate-btn {
+  background-color: hsl(7, 88%, 67%);
+  color: hsl(248, 70%, 10%);
+  border: none;
+  font-weight: bold;
+}
