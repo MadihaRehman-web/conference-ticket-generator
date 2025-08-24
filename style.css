@@ -20,17 +20,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5rem;
 }
 
 .coding-conf-logo {
   max-width: 9rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .heading {
   margin-top: 1.8rem;
   text-align: center;
   padding-inline: 2rem;
+  font-size: 1.5rem;
+  max-width: 40rem;
 }
 
 .sub-heading {
@@ -40,12 +43,16 @@
   color: #ccc;
 }
 
+.form-container {
+  padding-top: 2.5rem;
+}
+
 .form-container > div {
-  margin-top: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .form-container input {
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
 }
 
 .avatar-label {
@@ -80,6 +87,11 @@
 .upload-info {
   font-size: 12px;
   color: #ccc;
+  display: flex;
+}
+
+.upload-info img {
+  margin-right: 5px;
 }
 
 .text-field {
@@ -100,4 +112,28 @@
   color: hsl(248, 70%, 10%);
   border: none;
   font-weight: bold;
+}
+
+@media (width >= 1050px) {
+  .main-container {
+    background: url("./assets/images/pattern-lines.svg") center / cover,
+      url("./assets/images/pattern-squiggly-line-bottom-desktop.svg") left
+        bottom / 50rem no-repeat,
+      url("./assets/images/pattern-squiggly-line-top.svg") right top / 23rem
+        17rem no-repeat,
+      url("./assets/images/background-desktop.png") 100% 100% / cover;
+  }
+
+  .heading {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .avatar-label {
+    width: 24rem;
+  }
+
+  .text-field {
+    width: 24rem;
+  }
 }
